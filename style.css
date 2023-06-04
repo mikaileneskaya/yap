@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: rgb(52, 28, 75);
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(52, 28, 75, 0.95);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+body {
+    background: radial-gradient(circle,
+            rgb(52, 28, 75) 0%,
+            rgba(22, 0, 43) 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: block;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+header img {
+    height: 25px;
+    width: auto;
+    filter: grayscale(25%);
+}
+
+/* -----------------------------------------------
+    Name : YAP
+    Designer : Mikail Enes Kaya
+    URL : www.mikaileneskaya.com
+    ----------------------------------------------- */
+
+h1 {
+    font-family: "kanit";
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.card1 {
+    margin: auto;
+    width: 90%;
+    border: 8px double rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px 5px 20px 5px;
+    background-color: rgb(255, 255, 255, 0.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.card2 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 8px double rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px 20px 40px 20px;
+    background-color: rgb(255, 255, 255, 0.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.ekle {
+    width: 80%;
+    height: 45px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(22, 0, 43, 0.85);
+    outline: none;
+    color: rgb(22, 0, 43);
+    font-family: "Open Sans";
+    user-select: none;
+
+}
+
+.ekle:focus {
+    border: 2px solid rgb(22, 0, 43);
+    place-content: none;
+}
+
+.ekle:focus::placeholder {
+    color: transparent;
+}
+
+form button {
+    font-size: 20px;
+    min-width: 45px;
+    min-height: 45px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    background-color: rgb(52, 28, 75, 0.85);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+form button:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgb(52, 28, 75, 1);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255, 0.95);
+    font-family: "kanit";
+}
+
+ul li {
+    background-color: rgb(22, 0, 43, 0.6);
+    list-style: none;
+    margin-top: 3px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+ul li:hover {
+    background-color: rgb(22, 0, 43, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+ul li i {
+    float: right;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ul li i:hover {
+    border: 1px solid rgb(22, 0, 43, 1);
+    color: rgb(22, 0, 43, 1);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+
+}
+
+footer {
+    background: rgb(3, 1, 1);
+    color: rgba(240, 248, 255, 0.9);
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+}
+
+.tag {
+    font-style: italic;
+    color: rgb(240, 248, 255);
+    background-color: rgb(22, 0, 43, 1);
+    display: inline;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+    .card1 {
+        width: 60%;
+        padding: 5px 5px 20px 5px;
+        border: 15px double rgb(255, 255, 255);
+    }
+
+    .card2 {
+        width: 45%;
+        border: 15px double rgb(255, 255, 255);
+        padding: 10px 30px 40px 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .ekle {
+        height: 50px;
+        font-size: 18px;
+        border-radius: 15px;
+        border: 3px solid rgba(22, 0, 43, 0.85);
+    }
+
+    .ekle:focus {
+        border: 3px solid rgb(22, 0, 43);
+    }
+
+    form button {
+        font-size: 25px;
+        min-width: 50px;
+        min-height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.75);
+    }
+
+    form button:hover {
+        border: 3px solid rgba(255, 255, 255, 1);
+    }
+
+    header {
+        gap: 5px;
+    }
+
+    header img {
+        height: 35px;
+    }
+
+    ul li {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 18px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    ul li:hover {
+        border: 2px solid rgba(255, 255, 255, 0.65);
+    }
+
+    ul li i {
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    ul li i:hover {
+        border: 2px solid rgb(22, 0, 43, 1);
+    }
+
+    footer {
+        padding: 40px;
+        font-size: 16px;
+    }
+}
